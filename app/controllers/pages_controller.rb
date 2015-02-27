@@ -11,8 +11,6 @@ class PagesController < ApplicationController
   end
 
   def person
-    name = params[:name]
-    age = params[:age]
-    @person = Person.new(name, age)
+    @person = Person.new(params[:name], params[:age])
   end
 end

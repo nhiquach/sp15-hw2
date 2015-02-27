@@ -1,5 +1,5 @@
 class Foobar
   def self.baz(arr)
-  	arr.map{ |i| i.to_i }.select{ |i| i < 10}.uniq.select{|i| i.even? }.map{ |i| i + 2 }.sum
+  	arr.map{ |i| i.to_i + 2}.select{ |i| i.even? && i < 10}.uniq.sum
   end
 end
